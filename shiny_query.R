@@ -40,7 +40,7 @@ dbWriteTable(db_conn, "sales", ticket_sales %>%
                mutate(Date = as.character(Date)), overwrite = T)
 dbDisconnect(db_conn)
 
-simulated_query_wait <- 1
+simulated_query_wait <- 10
 sender_email <- "<your_email_address>"
 
 # Define UI
